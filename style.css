@@ -1,9 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-.checkbox:checked + .label .ball{
-    transform: translateX(19px);
+.checkbox:checked + .label .ball {
+  transform: translateX(19px);
+}
+/* Animations */
+/* For Card1 */
+#card1 {
+  animation-name: example1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example1 {
+  0% {
+    left: 0px;
+    top: 0px;
   }
+  100% {
+    left: 200px;
+    top: 0px;
+  }
+}
+/* For Card2 */
+#card2 {
+  animation-name: example2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes example2 {
+  0% {
+    right: 0px;
+    top: 0px;
+  }
+  100% {
+    right: 200px;
+    top: 0px;
+  }
+}
+
+/* For Card3 */
+#card3 {
+  animation-name: example3;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes example3 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 200px;
+    top: 0px;
+  }
+}
+/* Media queries */
+@media only screen and (max-width: 400px) {
+  #card1 {
+    animation: none;
+  }
+  #card2 {
+    animation: none;
+  }
+  #card3{
+    animation: none;
+  }
+}

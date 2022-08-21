@@ -15,7 +15,7 @@
     />
   </head>
   <body class="bg-black text-white font-serif">
-    <div class="hero">
+    <div class="hero pb-96">
       <!-- Nav section -->
       <div
         class="nav flex justify-between p-2 items-center transition ease-linear duration-[0.2s] space-x-"
@@ -80,47 +80,91 @@
           <div class="icons mt-[5rem] ml-[60px]">
             <ul class="text-[#feba27] text-3xl flex space-x-8">
               <li>
-                <i><i class="fa-brands fa-github"></i></i>
+                <i><i class="fa-brands fa-github cursor-pointer"></i></i>
               </li>
               <li>
-                <i><i class="fa-brands fa-linkedin-in"></i></i>
+                <i><i class="fa-brands fa-linkedin-in cursor-pointer"></i></i>
               </li>
               <li>
-                <i><i class="fa-brands fa-instagram"></i></i>
+                <i><i class="fa-brands fa-instagram cursor-pointer"></i></i>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="image mt-20 ms:mt-20 pl-[20%]">
+        <div class="image mt-20 ms:mt-20 pl-[15%]">
           <img
             src="./sexy.webp"
             alt=""
-            class="h-[12rem] w-[12rem] sm:scale-[2] rounded-[50%]"
+            class="h-[14rem] w-[16rem] sm:scale-[1.5] rounded-[50%]"
           />
         </div>
       </div>
 
-      <!-- Flex Section -->
-      <div class="services mt-28 pl-8">
+      <!--Flex Section -->
+      <div class="servies mt-28 pl-8 sm:flex sm:space-x-8">
         <div class="left">
           <h1 class="text-5xl flex leading-[90px]">
-            <div>My Awesomes <span class="text-[#feba27]">services</span></div>
+            <div>My Awesome <span class="text-[#feba27]">services</span></div>
           </h1>
           <p class="w-2/3">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
             tempora delectus eligendi?
           </p>
+          <button
+            class="bg-[#feba27] mt-8 px-8 py-2 rounded-[50px]"
+            style="box-shadow: 0px 25px 45px -10px #ffc70d"
+          >
+            Download CV
+          </button>
         </div>
-        <div class="right ">
-            <div class=""></div>
-            <div></div>
-            <div></div>
+        <div class="right  mt-20 sm:mt-5 ">
+          
+            <!-- Card1 -->
+            <div class="card1 relative">
+            <div id="card1" class="w-[350px] h-[380px] sm:w-[250px] sm:h-[300] bg-slate-200 mb-[8rem] text-center rounded-lg relative">
+              <i
+                class="fa-3x fa-solid fa-face-smile text-[#ffc70d] w-[50px] mt-28"
+              ></i>
+              <p class="text-black text-lg absolute bottom-0 left-[15%] sm:left-[10%]">Figma,Sketch, <br> Photoshop Illustrator,Adobe xd</p>
+              <button class="absolute bg-slate-200 p-3 top-[23.75rem] sm:top-[25rem] sm:left-[25%] left-[32%] font-bold text-blue-700 hover:text-blue-900 rounded-lg hover:underline hover:bg-slate-300">Learn More</button>
+              
+            </div>
+            
+          </div>
+            
+            <!-- Card2 -->
+            <div class="card2">
+            <div id="card2" class="w-[350px] h-[380px] sm:w-[250px] sm:h-[300] bg-slate-200 mb-[8rem] text-center rounded-lg relative sm:translate-x-[-18rem] sm:translate-y-[-10rem]">
+              <i
+                class="fa-3x fa-solid fa-face-smile text-[#ffc70d] w-[50px] mt-28"
+              ></i>
+              <p class="text-black text-lg absolute  bottom-0  left-[25%] sm:left-[22%]">HTML5,CSS3 <br> Javascript,ReactJs,<br>NodeJs,ExpressJs,<br>MongoDb</p>
+              <button class="absolute bg-slate-200 p-3 top-[23.75rem] sm:top-[25rem] sm:left-[25%] left-[32%] font-bold text-blue-700 hover:text-blue-900 rounded-lg hover:underline hover:bg-slate-300">Learn More</button>
+            </div>
+           
+            </div>
+            <!-- Card3 -->
+            <div class="card3">
+            <div id="card3" class="w-[350px] h-[380px] sm:w-[250px] sm:h-[300] bg-slate-200 mb-[8rem] text-center rounded-lg relative sm:translate-y-[-31rem]">
+              <i
+                class="fa-3x fa-solid fa-face-smile text-[#ffc70d] w-[50px] mt-28"
+              ></i>
+              <p class="text-black text-lg absolute  bottom-0 left-[25%] sm:left-[20%]">Bootstrap,Material, <br>UI,Style <br>Components,NextJs <br>EmailJs</p>
+              <button class="absolute bg-slate-200 p-3 top-[23.75rem] sm:top-[25rem] sm:left-[25%] left-[32%] font-bold text-blue-700 hover:text-blue-900 rounded-lg hover:underline hover:bg-slate-300">Learn More</button>
+            </div>
+            
+          </div>
+          
         </div>
+
+
+        <!-- end of flex section -->
       </div>
 
+      
 
-
+      <!-- End of hero div -->
     </div>
   </body>
 </html>
