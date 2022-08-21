@@ -16,40 +16,45 @@
   </head>
   <body class="bg-black text-white font-serif">
     <div class="hero">
+      <!-- Nav section -->
       <div
-      class="nav flex justify-between  p-2 items-center transition ease-linear duration-[0.2s] space-x-"
-    >
-      <div class="  text-3xl sm:flex mt-3">
-        <div>Coding</div>
-        <div>Blocks</div>
+        class="nav flex justify-between p-2 items-center transition ease-linear duration-[0.2s] space-x-"
+      >
+        <div class="text-3xl sm:flex mt-3">
+          <div>Coding</div>
+          <div>Blocks</div>
+        </div>
+        <div class="middle ml-[4rem] scale-[0.75] sm:scale-[1.]">
+          <input type="checkbox" class="checkbox opacity-0" id="checkbox" />
+          <label
+            for="checkbox"
+            class="label w-[50px] h-[26px] bg-black border-2 border-[#feba27] rounded-[50px] flex items-center justify-between p-[5px] scale-[1.5] relative sm:left-[-2rem]"
+          >
+            <i class="fas fa-moon text-[#feba27]"></i>
+            <i class="fas fa-sun text-[#feba27]"></i>
+            <div
+              class="ball w-[19px] h-[19px] bg-[#feba27] absolute rounded-[50%] transition ease-linear duration-[0.2s]"
+            ></div>
+          </label>
+        </div>
+        <div class="hidden sm:flex">
+          <ul class="flex justify-between space-x-8 pt-4">
+            <li class="cursor-pointer text-xl">Home</li>
+            <li class="cursor-pointer text-xl">Servies</li>
+            <li class="cursor-pointer text-xl">Interested</li>
+            <li class="cursor-pointer text-xl">Portfolio</li>
+            <li class="cursor-pointer text-xl">Education</li>
+          </ul>
+        </div>
+        <div class="right mr-[2rem] sm:mr-20 scale-[0.45] sm:scale-[1]">
+          <button
+            class="bg-[#feba27] mt-5 px-8 py-4 rounded-[50px]"
+            style="box-shadow: 0px 25px 45px -10px #ffc70d"
+          >
+            Contact
+          </button>
+        </div>
       </div>
-      <div class="middle ml-[1rem] sm:ml-0 scale-[0.75] sm:scale-[1.]">
-        <input type="checkbox" class="checkbox opacity-0" id="checkbox" />
-        <label
-          for="checkbox"
-          class="label w-[50px] h-[26px] bg-black border-2 border-[#feba27] rounded-[50px] flex items-center justify-between p-[5px] scale-[1.5] relative sm:left-[-2rem]"
-        >
-          <i class="fas fa-moon text-[#feba27]"></i>
-          <i class="fas fa-sun text-[#feba27]"></i>
-          <div
-            class="ball w-[19px] h-[19px] bg-[#feba27] absolute rounded-[50%]"
-          ></div>
-        </label>
-      </div>
-      <div class="hidden sm:flex">
-        <ul class="flex justify-between space-x-8 text-xl p-6">
-
-
-          <li class="cursor-pointer">Home</li>
-          <li class="cursor-pointer">Servies</li>
-          <li class="cursor-pointer">Interested</li>
-          <li class="cursor-pointer">Portfolio</li>
-          <li class="cursor-pointer">Education</li>
-        </ul>
-      </div>
-      <div class="right  mr-[2rem] sm:mr-20 scale-[0.45] sm:scale-[1] "><button class="bg-[#feba27] mt-5 px-8 py-4 rounded-[50px]" style="box-shadow: 0px 25px 45px -10px #ffc70d">Contact</button></div>
-      
-    </div>
     </div>
   </body>
 </html>
