@@ -15,17 +15,17 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-black text-white font-serif overflow-auto">
-    <div class="hero pb-96">
+  <body class="bg-black text-white font-serif">
+    <div class="hero pb-12 overflow-x-hidden">
       <!-- Nav section -->
       <div
-        class="nav flex justify-between p-2 items-center transition ease-linear duration-[0.2s] space-x-"
+        class="nav flex justify-around p-2 items-center transition ease-linear sm:ml-[-2rem] duration-[0.2s] space-x-"
       >
         <div class="text-3xl sm:text-4xl sm:flex mt-3 ml-4">
           <div>Coding</div>
           <div>Blocks</div>
         </div>
-        <div class="middle ml-[2.25rem] scale-[0.75] sm:scale-[1]">
+        <div class="middle scale-[0.75] sm:scale-[1]">
           <input type="checkbox" class="checkbox opacity-0" id="checkbox" />
           <label
             for="checkbox"
@@ -58,8 +58,8 @@
       </div>
 
       <!-- Content section -->
-      <div class="content mt-8 ml-5 sm:flex">
-        <div class="left pl-3">
+      <div class="content mt-8 ml-2 sm:flex sm:ml-[0rem] sm:justify-around">
+        <div class="left ml-10">
           <h1 class="text-5xl leading-[85px]">
             Hy! I Am<br />
             <span class="text-[#feba27] sm:flex"
@@ -72,22 +72,28 @@
             excepturi aliquam repellendus distinctio vitae.
           </p>
           <button
-            class="bg-[#feba27] mt-8 px-6 py-2 rounded-[50px]"
+            class="bg-[#feba27] mt-8 px-6 py-2 rounded-[50px] hover:text-[#feba27] hover:bg-white"
             style="box-shadow: 0px 25px 45px -10px #ffc70d"
           >
             Contact
           </button>
 
-          <div class="icons mt-[5rem] ml-[60px]">
+          <div class="icons mt-[5rem] ml-2">
             <ul class="text-[#feba27] text-3xl flex space-x-8">
               <li>
-                <a href="https://github.com"><i class="fa-brands fa-github cursor-pointer"></i></a>
+                <a href="https://github.com"
+                  ><i class="fa-2x fa-brands fa-github cursor-pointer"></i
+                ></a>
               </li>
               <li>
-                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in cursor-pointer"></i></a>
+                <a href="https://linkedin.com"
+                  ><i class="fa-2x fa-brands fa-linkedin-in cursor-pointer"></i
+                ></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram cursor-pointer"></i></a>
+                <a href="https://www.instagram.com/"
+                  ><i class="fa-2x fa-brands fa-instagram cursor-pointer"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -97,13 +103,15 @@
           <img
             src="./sexy.webp"
             alt=""
-            class="h-[14rem] w-[16rem] sm:scale-[1.5] rounded-[50%]"
+            class="h-[14rem] sm:mr-[8rem] w-[16rem] sm:scale-[1.2] rounded-[50%]"
           />
         </div>
       </div>
 
       <!--Flex Section -->
-      <div class="servies mt-28 pl-8 sm:flex sm:space-x-8">
+      <div
+        class="servies mt-28 pl-8 sm:flex sm:center sm:ml-[6rem] sm:space-x-8"
+      >
         <div class="left">
           <h1 class="text-5xl flex leading-[90px]">
             <div>My Awesome <span class="text-[#feba27]">services</span></div>
@@ -113,7 +121,7 @@
             tempora delectus eligendi?
           </p>
           <button
-            class="bg-[#feba27] mt-8 px-8 py-2 rounded-[50px]"
+            class="bg-[#feba27] mt-8 px-8 py-2 rounded-[50px] hover:text-[#feba27] hover:bg-white"
             style="box-shadow: 0px 25px 45px -10px #ffc70d"
           >
             Download CV
@@ -174,6 +182,7 @@
               <i
                 class="fa-3x fa-solid fa-face-smile text-[#ffc70d] w-[50px] mt-28"
               ></i>
+              
               <p
                 class="text-black text-lg absolute bottom-0 left-[25%] sm:left-[20%]"
               >
@@ -236,7 +245,7 @@
       </div>
       <!-- end of circle -->
       <!-- Work Section -->
-      <div class="work mt-32 sm:flex sm:justify-between px-[4rem]">
+      <div class="work mt-32 sm:flex sm:justify-around px-[4rem]">
         <div class="left p-4">
           <h1 class="text-5xl leading-[4rem]">
             I want to work for <br />
@@ -314,18 +323,16 @@
       </div>
 
       <!-- Portfolio -->
-      <h1 class="text-center text-4xl leading-[3rem] mt-60">
+      <h1 class="text-center text-4xl md:text-5xl leading-[3rem] mt-60">
         Recent Projects <br />
         <span class="text-[#ffd700]">Portfolio</span>
       </h1>
 
-      <!-- <div class="flexbox  flex  flex-col sm:flex-row">
-        <div class="w-[200px] h-[200px] bg-white"></div>
-      </div> -->
-
-      <div class="flexbox ml-6 mt-20 flex flex-col sm:flex-row sm:justify-evenly">
-        <div 
-          class=" tash1 w-[350px] h-[380px] sm:w-[250px] sm:h-[300] bg-slate-800 mb-[8rem] text-center rounded-lg pt-5"
+      <div
+        class="flexbox ml-6 mt-20 flex flex-col sm:flex-row sm:justify-evenly"
+      >
+        <div
+          class="tash1 w-[350px] h-[380px] sm:w-[250px] sm:h-[300] bg-slate-800 mb-[8rem] text-center rounded-lg pt-5 hover:border hover:border-white"
         >
           <h4 class="text-2xl">Coding Blocks</h4>
           <p class="ml-20 sm:ml-10 w-1/2 sm:w-3/4 mt-4">
@@ -336,7 +343,7 @@
           <button class="bg-slate-700 mt-6 py-4 px-8 rounded-3xl">View</button>
         </div>
         <div
-          class="tash1 w-[350px] h-[380px] sm:w-[250px] sm:h-[300] bg-slate-800 mb-[8rem] text-center rounded-lg pt-5"
+          class="tash1 w-[350px] h-[380px] sm:w-[250px] sm:h-[300] bg-slate-800 mb-[8rem] text-center rounded-lg pt-5 hover:border hover:border-white"
         >
           <h4 class="text-2xl">Coding Blocks</h4>
           <p class="ml-20 sm:ml-10 w-1/2 sm:w-3/4 mt-4">
@@ -347,7 +354,7 @@
           <button class="bg-slate-700 mt-6 py-4 px-8 rounded-3xl">View</button>
         </div>
         <div
-          class="tash1 w-[350px] h-[380px] sm:w-[250px] sm:h-[300] bg-slate-800 mb-[8rem] text-center rounded-lg pt-5"
+          class="tash1 w-[350px] h-[380px] sm:w-[250px] sm:h-[300] bg-slate-800 mb-[8rem] text-center rounded-lg pt-5 hover:border hover:border-white"
         >
           <h4 class="text-2xl">Coding Blocks</h4>
           <p class="ml-20 sm:ml-10 w-1/2 sm:w-3/4 mt-4">
@@ -358,7 +365,7 @@
           <button class="bg-slate-700 mt-6 py-4 px-8 rounded-3xl">View</button>
         </div>
         <div
-          class="tash1 w-[350px] h-[380px] sm:w-[250px] sm:h-[300] bg-slate-800 mb-[8rem] text-center rounded-lg pt-5"
+          class="tash1 w-[350px] h-[380px] sm:w-[250px] sm:h-[300] bg-slate-800 mb-[8rem] text-center rounded-lg pt-5 hover:border hover:border-white"
         >
           <h4 class="text-2xl">Coding Blocks</h4>
           <p class="ml-20 sm:ml-10 w-1/2 sm:w-3/4 mt-4">
@@ -369,7 +376,98 @@
           <button class="bg-slate-700 mt-6 py-4 px-8 rounded-3xl">View</button>
         </div>
       </div>
+      <div class="moti sm:flex flex-col items-center">
+        <div class="clients ml-[2rem] sm:ml-[3rem]">
+          <h1
+            class="text-4xl leading-[4rem] flex sm:flex-row flex-col items-start space-x-3"
+          >
+            <span>Clients always get </span
+            ><span class="text-[#ffd700]">Exceptional Work</span
+            ><span> from me...</span>
+          </h1>
+        </div>
+
+        <div
+          class="dabba sm:mt-24 py-6 flex items-center flex-col px-4 mt-[2rem] w-[100vw] sm:w-[500px] h-[200px] border-y-[10px] border-white sm:border-x-[10px] bg-slate-500 text-[#403f3c] sm:rounded-lg"
+        >
+          <div>
+            <img
+              class="w-[50px] h-[50px] rounded-[50%]"
+              src="./sexy.webp"
+              alt=""
+            />
+          </div>
+          <div class="text-[#ffd700]">
+            Lorem ipsum dolor sit amet consectetur adipisicing
+          </div>
+          <div><span class="text-white">2015-2019</span></div>
+          <div class="visit mt-2">
+            <button class="bg-white rounded-[1.75rem] px-5 py-2 text-[#ffd700]">
+              Visit
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Section -->
+      <div class="cont sm:flex justify-around cont mt-20 px-8">
+        <div class="left">
+          <h1
+            class="text-4xl sm:text-5xl flex sm:justify-center flex-col sm:flex-col sm:leading-loose sm:space-x-3 leading-[3rem]"
+          >
+            <span>Get in Touch </span
+            ><span class="text-[#ffd700]">Contact me</span>
+          </h1>
+        </div>
+        <div class="right flex items-center flex-col mt-10 space-y-8">
+          <input
+            type="text"
+            class="rounded-lg p-1 sm:scale-[1.2] sm:w-[30rem] text-black"
+            placeholder="Name"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="rounded-lg p-1 sm:scale-[1.2] sm:w-[30rem] text-black"
+          />
+          <textarea
+            placeholder="Message"
+            class="rounded-lg sm:scale-[1.2] sm:w-[30rem] sm:h-[5rem] text-black"
+          ></textarea>
+          <button
+            class="bg-[#ffd700] w-[5rem] h-[2.5rem] rounded-3xl sm:scale-[1.5]"
+            style="box-shadow: 0px 25px 45px -10px #ffc70d"
+          >
+            Send
+          </button>
+        </div>
+      </div>
     </div>
-    <!-- End of hero div -->
+
+    <footer class="w-[100vw] h-[10vh]">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f9c802"
+          fill-opacity="1"
+          d="M0,128L80,149.3C160,171,320,213,480,197.3C640,181,800,107,960,90.7C1120,75,1280,117,1360,138.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+      <p
+        class="bg-[#f9c802] text-center mt-0 pb-10 hover:text-lg hover:text-slate-500"
+      >
+        kumardikshant09@gmail.com
+      </p>
+      <div class="social flex justify-center space-x-9 pb-5 bg-[#f9c802]">
+        <a href="#">
+          <i class="fab fa-3x fa-github hover:text-slate-800"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-3x fa-linkedin-in hover:text-blue-600"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-3x fa-instagram hover:text-[#8a3ab9]"></i>
+        </a>
+      </div>
+    </footer>
+    
   </body>
 </html>
