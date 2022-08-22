@@ -79,3 +79,21 @@
     animation: none;
   }
 }
+
+.circle {
+    border: 5px solid;
+    border-image: linear-gradient(50%, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  }
+
+.tash1{
+    transition: all .2s linear;
+}
+.tash1 button{
+    box-shadow: -10px 10px 10px 0px green; 
+}
+.tash1 button:hover{
+    box-shadow: 0px 0px 10px 0px rgb(10, 215, 60);
+}
+.tash1:hover{
+    transform: translate(0,-20px);
+}
